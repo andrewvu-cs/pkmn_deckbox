@@ -42,9 +42,10 @@ class CardLayout extends Component{
                 <Details 
                     name={this.state.card.name} 
                     hp={this.state.card.hp} 
-                    abilityType = {this.state.ability.type} 
-                    ability={this.state.ability.name}
-                    abilityText={this.state.ability.text}
+                    // abilityType = {this.state.ability.type} 
+                    // ability={this.state.ability.name}
+                    // abilityText={this.state.ability.text}
+                    ability={this.state.ability}
                     attackCost = {this.state.attack1.cost}
                     attackName = {this.state.attack1.name}
                     attackText = {this.state.attack1.text}

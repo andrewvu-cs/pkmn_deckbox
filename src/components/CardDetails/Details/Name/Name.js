@@ -1,7 +1,9 @@
 import React from 'react';
 
+import classes from './Name.module.scss';
+
 const name = ( props ) => (
-    <div>
+    <div className={classes.Name}>
         <h1>Name: {props.name}</h1>
     </div>
 )
