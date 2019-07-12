@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Card from '../../components/CardDetails/Card/Card';
+import Card from '../../components/CardDetails/CardImage/CardImage';
 import Details from '../../components/CardDetails/Details/Details';
 import axios from 'axios';
 
@@ -13,9 +13,12 @@ class CardLayout extends Component{
         attack2: ""
     }
 
+
+    //Gets data from sdk 
     componentDidMount(){
         const pokemon = require('pokemontcgsdk');
 
+        //Store vital data into the state
          pokemon.card.find('base1-2')
             .then(result => {
                 console.log(result);
@@ -33,6 +36,7 @@ class CardLayout extends Component{
 
     render(){
         return(
+            //Renders the Card and Details
             <div>
                 <Card image={this.state.card.imageUrlHiRes}/>
                 <Details 

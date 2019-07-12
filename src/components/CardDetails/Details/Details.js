@@ -1,12 +1,13 @@
 import React from 'react';
 
 import Moves from './Moves/Moves';
-
+import Name from './Name/Name';
+import HP from './Hp/Hp';
 
 const details = ( props ) => (
     <div>
-        <h1>Pokemon Name: {props.name}</h1>
-        <h1>HP: {props.hp}</h1>
+        <Name name={props.name}/>
+        <HP hp={props.hp} />
         <Moves />
     </div>
 
